@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <!--<FrameLayout
+
+        android:id="@+id/cell_content_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+        <include layout="@layout/folding_relative" />
+    </FrameLayout>-->
+
+<!--
+<include layout="@layout/customfoldnew"/>-->
+
+
+    <test.jinesh.customnavigation.Folding_Cell.FoldingCell
+
+        android:id="@+id/folding_cell"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        folding-cell:additionalFlipsCount="1"
+        folding-cell:animationDuration="150"
+        folding-cell:cameraHeight="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <include layout="@layout/closbutton" />
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/event_item" />
+
+        </FrameLayout>
+
+    </test.jinesh.customnavigation.Folding_Cell.FoldingCell>
+
+
+</RelativeLayout>

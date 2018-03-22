@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<test.jinesh.customnavigation.Folding_Cell.FoldingCell
+    android:id="@+id/folding_cell"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    folding-cell:additionalFlipsCount="0"
+    folding-cell:animationDuration="3000"
+    folding-cell:backSideColor="#f4f0ff"
+    folding-cell:cameraHeight="30"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <FrameLayout
+
+        android:id="@+id/cell_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/folding_relative" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cell_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/event_item" />
+
+    </FrameLayout>
+
+</test.jinesh.customnavigation.Folding_Cell.FoldingCell>
+

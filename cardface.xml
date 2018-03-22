@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical">
+
+
+        <!--   <test.jinesh.customnavigation.FoldableLayout.FoldableListLayout
+
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+               folding-cell:additionalFlipsCount="4"
+               folding-cell:animationDuration="3000"
+               folding-cell:backSideColor="#f4f0ff"
+               folding-cell:cameraHeight="30"
+               android:id="@+id/folding_cell"
+               >-->
+
+
+
+
+
+            <include
+                android:id="@+id/back"
+                layout="@layout/folding_relative" />
+
+
+
+            <include
+                android:id="@+id/front"
+                layout="@layout/event_item" />
+
+
+</LinearLayout>

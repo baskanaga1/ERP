@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar">
+        <ImageView
+            android:layout_width="30dp"
+           android:src="@drawable/menu"
+            android:id="@+id/navIcon"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+
+            android:weightSum="10"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="7.5"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/action_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard"
+                    android:gravity="center"
+
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    android:textStyle="normal"
+
+                    />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="55dp"
+                    android:background="@drawable/notification"
+                    android:orientation="horizontal"
+                    android:layout_height="40dp">
+            <ImageView
+                android:layout_width="10dp"
+                android:src="@drawable/red_point"
+                android:id="@+id/sf"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:layout_height="15dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="21"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</merge>

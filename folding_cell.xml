@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test.jinesh.customnavigation.Folding_Cell.FoldingCell
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:folding-cell="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    folding-cell:additionalFlipsCount="4"
+    folding-cell:animationDuration="1300"
+    folding-cell:backSideColor="#f4f0ff"
+    folding-cell:cameraHeight="30">
+
+
+    <include layout="@layout/folding_relative" />
+    <include layout="@layout/event_item" />
+
+</test.jinesh.customnavigation.Folding_Cell.FoldingCell>
